@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+  }
+/* Hide scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
