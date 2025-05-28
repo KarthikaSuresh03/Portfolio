@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 
-function NavBar() {
+function NavBar({ onContactClick }) {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white z-50 p-6">
       <ul className="flex justify-end gap-16 text-lg font-medium pr-10">
@@ -15,7 +15,13 @@ function NavBar() {
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500} className="cursor-pointer">
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+            onClick={onContactClick}  // <--- open modal on click
+          >
             Contact
           </Link>
         </li>
