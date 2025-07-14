@@ -4,9 +4,9 @@ import kodomo from './../assets/kodomo.png';
 import greenup from './../assets/greenup.png';
 
 const projects = [
-  { id: 1, title: 'ToyAI', img: toyai },
-  { id: 2, title: 'Kodomo', img: kodomo },
-  { id: 3, title: 'GreenUp', img: greenup },
+  { id: 1, title: 'ToyAI', img: toyai, link: 'https://www.figma.com/proto/aZfh5XBdrtNmC55mdPWJie/DBMS-Mini-Project?node-id=1-2&starting-point-node-id=1%3A2&t=X2ujCImib9AC6CO7-1' },
+  { id: 2, title: 'Kodomo', img: kodomo, link: 'https://kodomo-firebase.web.app/ ' },
+  { id: 3, title: 'GreenUp', img: greenup, link: 'https://green-up5554.netlify.app' },
 ];
 
 const AUTO_SCROLL_DURATION = 4000; // 4 seconds
@@ -161,7 +161,8 @@ const Projects = () => {
         {projects.map((project, i) => (
           <div
             key={project.id}
-            className={`w-full h-[75vh] relative group rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-300 `}
+            onClick={() => window.open(project.link, '_blank')}
+            className={`w-full h-[75vh] relative group rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-300`}
             style={{
               position: i === activeIndex ? 'sticky' : 'relative',
               top: i === activeIndex ? 0 : 'auto',

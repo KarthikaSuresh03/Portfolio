@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/vite": "^4.1.4",
     "gsap": "^3.13.0",
     "lucide-react": "^0.511.0",
@@ -19,7 +20,7 @@
     "react-router-dom": "^7.6.0",
     "react-scroll": "^1.9.3",
     "simple-icons": "^14.14.0",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
